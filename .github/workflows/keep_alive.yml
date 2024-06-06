@@ -1,24 +1,8 @@
-# name: Keep Hugging Face Space Alive
-
-# on:
-#   schedule:
-#     - cron: '*/15 * * * *'  # Runs every 15 minutes
-#   workflow_dispatch:
-
-# jobs:
-#   keep_alive:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Send Keep-Alive Request
-#         run: |
-#           curl -X GET "https://amrpyt-flowise.hf.space"
-
 name: Keep Hugging Face Space Alive
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Runs every 6 hours
-
+    - cron: '*/15 * * * *'  # Runs every 15 minutes
   workflow_dispatch:
 
 jobs:
@@ -27,4 +11,4 @@ jobs:
     steps:
       - name: Send Keep-Alive Request
         run: |
-          curl -X GET "https://amrpyt-flowise.hf.space"
+          curl -X GET "https://amrpyt-Flowise.hf.space"
